@@ -90,11 +90,10 @@
       <img src="https://via.placeholder.com/150" alt="Profile Picture">
     </div>
     <div class="card-content">
-      <h2>John Doe</h2>
-      <p class="designation">Web Developer</p>
+      <h2>Chandra Shekhar</h2>
+      <p class="designation">Software Developer</p>
       <p class="bio">Passionate about creating stunning websites and applications. Enjoy learning new technologies and collaborating with others.</p>
       <div class="social-media">
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
