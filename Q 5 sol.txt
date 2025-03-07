@@ -89,7 +89,7 @@
       if (currentIndex < slideImages.length - 1) {
         currentIndex++;
       } else {
-        currentIndex = 0; // Loop back to first image
+        currentIndex = 0; 
       }
       updateSliderPosition();
     }
@@ -98,14 +98,13 @@
       if (currentIndex > 0) {
         currentIndex--;
       } else {
-        currentIndex = slideImages.length - 1; // Loop back to last image
+        currentIndex = slideImages.length - 1; 
       }
       updateSliderPosition();
     }
 
-    // Initial setup
     window.addEventListener('resize', updateSliderPosition);
-    updateSliderPosition(); // Set initial position
+    updateSliderPosition(); 
   </script>
 
 </body>
