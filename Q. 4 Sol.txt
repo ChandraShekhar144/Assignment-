@@ -88,17 +88,14 @@
       <button id="addButton">Add Task</button>
     </div>
     <ul id="taskList">
-      <!-- Tasks will appear here -->
     </ul>
   </div>
 
   <script>
-    // Get the required elements
     const taskInput = document.getElementById('taskInput');
     const addButton = document.getElementById('addButton');
     const taskList = document.getElementById('taskList');
 
-    // Function to add a task
     function addTask() {
       const taskText = taskInput.value.trim();
       
@@ -107,31 +104,23 @@
         return;
       }
       
-      // Creating the list item (task)
       const li = document.createElement('li');
       li.textContent = taskText;
       
-      // Create a remove button
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Remove';
       removeButton.onclick = function() {
-        taskList.removeChild(li); // Remove the task from the list
+        taskList.removeChild(li);
       };
 
-      // Add the remove button to the list item
       li.appendChild(removeButton);
       
-      // Add the list item to the task list
       taskList.appendChild(li);
 
-      // Clear the input field after adding the task
       taskInput.value = '';
     }
 
-    // Event listener for the "Add Task" button
     addButton.addEventListener('click', addTask);
-
-    // Optional: Allow users to press "Enter" to add a task
     taskInput.addEventListener('keypress', function(event) {
       if (event.key === 'Enter') {
         addTask();
